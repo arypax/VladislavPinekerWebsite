@@ -1,0 +1,380 @@
+.main-div {
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+    margin-bottom: 0;
+    padding: 0;
+    max-width: 1300px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.list-item {
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    max-width: 100%;
+}
+
+.list-item p {
+    padding-top: 5px;
+}
+
+#welcome, #skills, #experience, #education, #portfolio, #contact{
+    border-top: 1px solid rgb(201, 201, 201);
+}
+
+#copyright {
+    border-top: 1px solid rgb(201, 201, 201);
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+.welcome-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: auto;
+}
+
+.welcome-text {
+    flex: 1;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.welcome-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.welcome-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+    align-self: flex-end;
+}
+
+.about-me-info {
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.span-title {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.welcome-title-after {
+    color: #666;
+}
+
+.about-me-info p {
+    margin: 5px 0;
+    margin-top: 0;
+}
+
+.about-me-info a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: blue;
+}
+
+.about-me-info a:hover {
+    color: orange;
+    transition: 0.1s;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.buttons a {
+    text-decoration: none;
+    background-color: orange;
+    color: white;
+}
+
+.contact-button, .cv-button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: box-shadow 0.3s ease;
+    border-radius: 5px;
+}
+
+.contact-button {
+    background-color: orange;
+    color: white;
+}
+
+.cv-button {
+    background-color: #dadada !important;
+    color: black !important;
+}
+
+.contact-button:hover, .cv-button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skills-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.skills-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.skills-list {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.skills-item {
+    flex: 1 1 calc(33.333% - 20px);
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.experience-item {
+    flex: 1;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.experience-item:nth-of-type(2) {
+    border-top: 1px solid #e6e6e6;
+    width: 100%;
+}
+
+.experience-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.experience-subtitle {
+    color: #666;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.experience-description {
+    font-size: 16px;
+    margin: 10px;
+}
+
+.portfolio-item {
+    width: 45%;
+    box-sizing: border-box;
+}
+
+.portfolio-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.portfolio-subtitle {
+    color: #666;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.portfolio-description {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.portfolio-description a {
+    text-decoration: none;
+    background-color: #21262d;
+    color: white;
+    padding: 13px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    width: max-content;
+    transition: box-shadow 0.3s ease;
+    margin-left: 10px;
+}
+
+.portfolio-description a:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-right {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: auto;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 800px;
+}
+
+.portfolio-grid .portfolio-image {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.portfolio-image {
+    width: calc(50% - 10px);
+    height: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-image:hover img {
+    transform: scale(1.1);
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contact-left {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.contact-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+    flex: 1;
+}
+
+.input-group input,
+.input-group textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+    color: #999;
+    font-weight: 300;
+}
+
+.input-group textarea {
+    flex: 1;
+    resize: vertical;
+}
+
+.contact-submit {
+    background-color: orange !important;
+    color: white !important;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: box-shadow 0.3s ease;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 10px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.contact-submit:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#copyright p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dark-theme {
+    background-color: rgb(211, 211, 211);
+    color: black;
+}
+
+body.dark-theme .contact-button, body.dark-theme .contact-submit {
+    background-color: orange !important;
+    color: white !important;
+}
+
+body.dark-theme .cv-button {
+    background-color: #dadada !important;
+    color: black !important;
+}
+
+body.dark-theme .skills-item {
+    background-color: #383838;
+}
+
+body.dark-theme .social-icon {
+    background-color: white;
+    border-radius: 60px;
+    outline: white 1px solid;
+}
