@@ -54,8 +54,8 @@ function NavBar() {
                         </div>
                     </li>
                     <li className='navbar-item'>
-                        <img className='slider-language' src="/img/icons/eng.svg" alt="English" onClick={() => handleToggleLanguage('en')} />
-                        <img className='slider-language' src="/img/icons/ru.svg" alt="Russian" onClick={() => handleToggleLanguage('ru')} />
+                        <img className='slider-language' src="/public/img/icons/eng.svg" alt="English" onClick={() => handleToggleLanguage('en')} />
+                        <img className='slider-language' src="/public/img/icons/ru.svg" alt="Russian" onClick={() => handleToggleLanguage('ru')} />
                     </li>
                 </div>
             </ul>
