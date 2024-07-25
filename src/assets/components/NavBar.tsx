@@ -25,7 +25,7 @@ function NavBar() {
 
     const handleToggleLanguage = (lang: string) => {
         if (lang !== currentLanguage) {
-            toggleLanguage();
+            toggleLanguage(lang);
         }
     };
 
@@ -38,12 +38,12 @@ function NavBar() {
             <ul className='navbar-list'>
                 <li className='navbar-item navbar-item-vladislav'>{translations.name}</li>
                 <div className='navbar-right'>
-                    <li className='navbar-item'><a href="#welcome">{translations.welcome}</a></li>
-                    <li className='navbar-item'><a href="#skills">{translations.skills}</a></li>
-                    <li className='navbar-item'><a href="#experience">{translations.experience}</a></li>
-                    <li className='navbar-item'><a href="#education">{translations.education}</a></li>
-                    <li className='navbar-item'><a href="#portfolio">{translations.portfolio}</a></li>
-                    <li className='navbar-item'><a href="#contact">{translations.contact}</a></li>
+                    <li className='navbar-item' id='navbar-text-item'><a href="#welcome">{translations.welcome}</a></li>
+                    <li className='navbar-item' id='navbar-text-item'><a href="#skills">{translations.skills}</a></li>
+                    <li className='navbar-item' id='navbar-text-item'><a href="#experience">{translations.experience}</a></li>
+                    <li className='navbar-item' id='navbar-text-item'><a href="#education">{translations.education}</a></li>
+                    <li className='navbar-item' id='navbar-text-item'><a href="#portfolio">{translations.portfolio}</a></li>
+                    <li className='navbar-item' id='navbar-text-item'><a href="#contact">{translations.contact}</a></li>
                     <li className='navbar-item'>
                         <div className='checkbox-wrapper-41'>
                             <input
@@ -55,6 +55,7 @@ function NavBar() {
                     </li>
                     <li className='navbar-item'>
                         <img className='slider-language' src="/img/icons/eng.svg" alt="English" onClick={() => handleToggleLanguage('en')} />
+                        <img className='slider-language' src="/img/icons/kz.svg" alt="Kazakh" onClick={() => handleToggleLanguage('kz')} />
                         <img className='slider-language' src="/img/icons/ru.svg" alt="Russian" onClick={() => handleToggleLanguage('ru')} />
                     </li>
                 </div>

@@ -1,10 +1,11 @@
 import React, { createContext, useState, useContext, ReactNode, useEffect } from 'react';
 import translationsRu from './translations.ru.json';
 import translationsEn from './translations.en.json';
+import translationsKz from './translations.kz.json';
 
 interface LanguageContextType {
   currentLanguage: string;
-  toggleLanguage: () => void;
+  toggleLanguage: (language: string) => void;
   translations: any;
 }
 
@@ -20,15 +21,15 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     return savedLanguage ? savedLanguage : 'en';
   });
 
-  const toggleLanguage = () => {
-    setCurrentLanguage(currentLanguage === 'ru' ? 'en' : 'ru');
+  const toggleLanguage = (language: string) => {
+    setCurrentLanguage(language);
   };
 
   useEffect(() => {
     localStorage.setItem('language', currentLanguage);
   }, [currentLanguage]);
 
-  const translations = currentLanguage === 'ru' ? translationsRu : translationsEn;
+  const translations = currentLanguage === 'ru' ? translationsRu : (currentLanguage === 'kz' ? translationsKz : translationsEn);
 
   return (
     <LanguageContext.Provider value={{ currentLanguage, toggleLanguage, translations }}>

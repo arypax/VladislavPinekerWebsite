@@ -158,3 +158,48 @@ body.dark-theme .slider-language {
 .slider-language:hover {
     transform: scale(1.1);
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding-top: 0;
+        padding-bottom: 0;
+        height: auto;
+    }
+
+    .navbar-list {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar-item {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar-item a {
+        font-size: 14px; 
+    }
+
+    .navbar-right{
+        margin-right: 10px;
+    }
+
+    .navbar-item-vladislav {
+        margin-left: 20px;
+    }
+
+    .slider-language {
+        width: auto;
+    }
+
+    .checkbox-wrapper-41{
+        margin-right: 20px;
+    }
+    
+    #navbar-text-item {
+        display: none;
+    }
+
+}

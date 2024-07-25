@@ -378,3 +378,97 @@ body.dark-theme .social-icon {
     border-radius: 60px;
     outline: white 1px solid;
 }
+
+/* List.css */
+
+/* Сброс для мобильных устройств */
+@media (max-width: 768px) {
+    .main-div {
+        margin: 10px;
+        padding: 0;
+    }
+
+    .list-item {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .welcome-content,
+    .skills-content,
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .welcome-image,
+    .skills-list,
+    .portfolio-grid {
+        width: 100%;
+    }
+
+    .welcome-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .portfolio-item,
+    .contact-right {
+        width: 100%;
+    }
+
+    .portfolio-right {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .portfolio-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+}
+
+
+/* Стили для еще меньших экранов */
+@media (max-width: 480px) {
+    .skills-item {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .experience-title, .experience-subtitle, .experience-description {
+        font-size: 14px;
+    }
+
+    .portfolio-title, .portfolio-subtitle, .portfolio-description {
+        font-size: 18px;
+    }
+
+    .contact-submit {
+        padding: 8px 16px;
+    }
+
+    .skills-list{
+        padding-top: 20px;
+    }
+
+    .input-fields{
+        gap: 20px;
+    }
+
+    #welcome.list-item {
+        margin-top: 0;
+        padding-bottom: 0px;
+    }
+    
+    .welcome-image{
+        margin-top: 20px;
+    }
+
+    .buttons{
+        margin-top: 15px;
+    }
+}
