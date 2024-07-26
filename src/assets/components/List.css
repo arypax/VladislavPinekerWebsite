@@ -238,6 +238,10 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+body.dark-theme .portfolio-description a{
+    background-color: #404346;
+}
+
 .portfolio-right {
     width: 60%;
     display: flex;
@@ -354,6 +358,10 @@
     margin-right: auto;
 }
 
+#copyright.list-item{
+    
+}
+
 .dark-theme {
     background-color: rgb(211, 211, 211);
     color: black;
@@ -379,9 +387,6 @@ body.dark-theme .social-icon {
     outline: white 1px solid;
 }
 
-/* List.css */
-
-/* Сброс для мобильных устройств */
 @media (max-width: 768px) {
     .main-div {
         margin: 10px;
@@ -431,8 +436,6 @@ body.dark-theme .social-icon {
     }
 }
 
-
-/* Стили для еще меньших экранов */
 @media (max-width: 480px) {
     .skills-item {
         font-size: 20px;
@@ -440,7 +443,7 @@ body.dark-theme .social-icon {
     }
 
     .experience-title, .experience-subtitle, .experience-description {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .portfolio-title, .portfolio-subtitle, .portfolio-description {
@@ -448,7 +451,8 @@ body.dark-theme .social-icon {
     }
 
     .contact-submit {
-        padding: 8px 16px;
+        margin-top: 15px;
+        margin-bottom: 5px;
     }
 
     .skills-list{
