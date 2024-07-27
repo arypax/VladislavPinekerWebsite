@@ -64,11 +64,11 @@ function List() {
                             <p><span className='span-title'>{translations.address}</span><span className='welcome-title-after'>Republic of Kazakhstan, Almaty, 040708</span></p>
                             <p><span className='span-title'>{translations.social}</span>
                                 <span>
+                                    <a href="https://t.me/vladislav_pineker"><img src="/img/icons/telegram.svg" alt="Telegram" className="social-icon" /></a>
                                     <a href="https://www.instagram.com/vladislav.pineker/"><img src="/img/icons/instagram.svg" alt="Instagram" className="social-icon" /></a>
                                     <a href="https://www.linkedin.com/in/vladislav-pineker/"><img src="/img/icons/linkedin.svg" alt="LinkedIn" className="social-icon" /></a>
-                                    <a href="https://t.me/vladislav_pineker"><img src="/img/icons/telegram.svg" alt="Telegram" className="social-icon" /></a>
-                                    <a href="https://github.com/arypax"><img src="/img/icons/github.svg" alt="GitHub" className="social-icon" /></a>
                                     <a href="https://hh.kz/resume/92d4b32bff0b93dac70039ed1f396f316d4737"><img src="/img/icons/headhunter.svg" alt="HeadHunter" className="social-icon" /></a>
+                                    <a href="https://github.com/arypax"><img src="/img/icons/github.svg" alt="GitHub" className="social-icon" /></a>
                                 </span>
                             </p>
                         </div>
