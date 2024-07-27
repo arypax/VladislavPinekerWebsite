@@ -358,10 +358,6 @@ body.dark-theme .portfolio-description a{
     margin-right: auto;
 }
 
-#copyright.list-item{
-    
-}
-
 .dark-theme {
     background-color: rgb(211, 211, 211);
     color: black;
@@ -474,5 +470,9 @@ body.dark-theme .social-icon {
 
     .buttons{
         margin-top: 15px;
+    }
+
+    .contact-submit{
+        font-family: 'Noto Sans', sans-serif;
     }
 }
