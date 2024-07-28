@@ -62,7 +62,7 @@ body.dark-theme .navbar-item a {
 
 .navbar-item a:hover {
     transition: 0.2s;
-    color: orange !important;
+    color: rgb(23, 113, 231) !important;
 }
 
 .navbar-right {

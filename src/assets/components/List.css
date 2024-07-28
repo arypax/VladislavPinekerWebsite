@@ -89,11 +89,10 @@
 .about-me-info a {
     margin-right: 10px;
     text-decoration: none;
-    color: blue;
 }
 
 .about-me-info a:hover {
-    color: orange;
+    color: rgb(23, 113, 231);
     transition: 0.1s;
 }
 
@@ -105,7 +104,7 @@
 
 .buttons a {
     text-decoration: none;
-    background-color: orange;
+    background-color: rgb(23, 113, 231);
     color: white;
 }
 
@@ -120,7 +119,7 @@
 }
 
 .contact-button {
-    background-color: orange;
+    background-color: rgb(23, 113, 231);
     color: white;
 }
 
@@ -335,7 +334,7 @@ body.dark-theme .portfolio-description a{
 }
 
 .contact-submit {
-    background-color: orange !important;
+    background-color: rgb(23, 113, 231) !important;
     color: white !important;
     padding: 10px 20px;
     border: none;
@@ -364,7 +363,7 @@ body.dark-theme .portfolio-description a{
 }
 
 body.dark-theme .contact-button, body.dark-theme .contact-submit {
-    background-color: orange !important;
+    background-color: rgb(23, 113, 231) !important;
     color: white !important;
 }
 
