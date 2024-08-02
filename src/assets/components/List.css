@@ -92,7 +92,7 @@
 }
 
 .about-me-info a:hover {
-    color: rgb(23, 113, 231);
+    color: #1771e7;
     transition: 0.1s;
 }
 
@@ -104,7 +104,7 @@
 
 .buttons a {
     text-decoration: none;
-    background-color: rgb(23, 113, 231);
+    background-color: #1771e7;
     color: white;
 }
 
@@ -119,7 +119,7 @@
 }
 
 .contact-button {
-    background-color: rgb(23, 113, 231);
+    background-color: #1771e7;
     color: white;
 }
 
@@ -334,7 +334,7 @@ body.dark-theme .portfolio-description a{
 }
 
 .contact-submit {
-    background-color: rgb(23, 113, 231) !important;
+    background-color: #1771e7 !important;
     color: white !important;
     padding: 10px 20px;
     border: none;
@@ -363,7 +363,7 @@ body.dark-theme .portfolio-description a{
 }
 
 body.dark-theme .contact-button, body.dark-theme .contact-submit {
-    background-color: rgb(23, 113, 231) !important;
+    background-color: #1771e7 !important;
     color: white !important;
 }
 
@@ -442,7 +442,7 @@ body.dark-theme .social-icon {
     }
 
     .portfolio-title, .portfolio-subtitle, .portfolio-description {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .contact-submit {
