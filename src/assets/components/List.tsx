@@ -211,7 +211,7 @@ function List() {
                                     required
                                 ></textarea>
                             </div>
-                            <button type='submit' className='contact-submit'>{translations.sendMessageButton}</button>
+                            <button className='contact-submit'>{translations.sendMessageButton}</button>
                         </form>
                     </div>
                 </div>
