@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding-top: 35px;
     transition: background-color 0.3s, color 0.3s;
+    bottom: 0;
 }
 
 body.dark-theme {
