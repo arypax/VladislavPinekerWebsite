@@ -355,6 +355,7 @@ body.dark-theme .portfolio-description a{
 #copyright p {
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
 }
 
 .dark-theme {
