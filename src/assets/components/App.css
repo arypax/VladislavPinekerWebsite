@@ -1,4 +1,5 @@
 * {
+    background-color: white;
     margin: 0;
     padding: 0;
     transition: background-color 0.3s, color;
@@ -6,4 +7,5 @@
 
 body.dark-theme * {
     background-color: #292929;
+    color: white;
 }
