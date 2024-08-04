@@ -61,7 +61,7 @@ function List() {
                         <div className='about-me-info'>
                             <p><span className='span-title'>{translations.phone}</span><span className='welcome-title-after'>+7 (776) 2150 888</span></p>
                             <p><span className='span-title'>{translations.email}</span><span className='welcome-title-after'>vladislav.pineker@icloud.com</span></p>
-                            <p><span className='span-title'>{translations.address}</span><span className='welcome-title-after'>Republic of Kazakhstan, Almaty, 040708</span></p>
+                            <p><span className='span-title'>{translations.address}</span><span className='welcome-title-after'>{translations.aboutMeAdress}</span></p>
                             <p><span className='span-title'>{translations.social}</span>
                                 <span>
                                     <a href="https://t.me/vladislav_pineker"><img src="/img/icons/telegram.svg" alt="Telegram" className="social-icon" /></a>
