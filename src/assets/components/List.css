@@ -165,6 +165,9 @@
 }
 
 .skills-item:hover {
+    background-color: #1771e7 !important;
+    transition: 0.3s;
+    color: white !important;
     transform: translateY(-5px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
