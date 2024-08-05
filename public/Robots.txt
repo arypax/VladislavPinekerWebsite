@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://vladislav-pineker.vercel.app/Sitemap.xml
+Sitemap: https://vladislav-pineker.vercel.app/sitemap.xml
