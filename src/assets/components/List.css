@@ -8,6 +8,15 @@
     font-family: 'Noto Sans', sans-serif;
 }
 
+.scroll-target {
+    scroll-margin-top: 70px;
+}
+
+.highlight {
+    color: #1771e7;
+    transition: color 0.5s ease;
+}
+
 .list-item {
     margin-top: 20px;
     padding-top: 20px;

@@ -8,3 +8,7 @@ body.dark-theme,
 body.dark-theme * {
     color: rgb(201, 201, 201) !important;
 }
+
+html {
+    scroll-behavior: smooth;
+  }

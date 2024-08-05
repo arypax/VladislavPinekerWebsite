@@ -53,7 +53,7 @@ function List() {
 
     return (
         <div className='main-div'>
-            <div className='list-item' id='welcome'>
+            <div className='list-item scroll-target' id='welcome'>
                 <div className='welcome-content'>
                     <div className='welcome-text'>
                         <h1>{translations.aboutMeHeading}</h1>
@@ -83,7 +83,7 @@ function List() {
                 </div>
             </div>
 
-            <div className='list-item' id='skills'>
+            <div className='list-item scroll-target' id='skills'>
                 <div className='skills-content'>
                     <div className='skills-text'>
                         <h1>{translations.skillsHeading}</h1>
@@ -100,7 +100,7 @@ function List() {
                 </div>
             </div>
 
-            <div className='list-item' id='experience'>
+            <div className='list-item scroll-target' id='experience'>
                 <div>
                     <h1>{translations.experienceHeading}</h1>
                     <div className='experience-item'>
@@ -123,7 +123,7 @@ function List() {
                 </div>
             </div>
 
-            <div className='list-item' id='education'>
+            <div className='list-item scroll-target' id='education'>
                 <div>
                     <h1>{translations.educationHeading}</h1>
                     <div className='experience-item'>
@@ -146,7 +146,7 @@ function List() {
                 </div>
             </div>
 
-            <div className='list-item' id='portfolio'>
+            <div className='list-item scroll-target' id='portfolio'>
                 <div className='portfolio-item'>
                     <h1>{translations.portfolioHeading}</h1>
                     <div className='portfolio-title'>{translations.projectTitle}</div>
@@ -173,7 +173,7 @@ function List() {
                 </div>
             </div>
 
-            <div className='list-item' id='contact'>
+            <div className='list-item scroll-target' id='contact'>
                 <div className='contact-content'>
                     <div className='contact-left'>
                         <h1>{translations.contactHeading}</h1>
@@ -216,9 +216,9 @@ function List() {
                     </div>
                 </div>
             </div>
-                    <div className='list-item' id='copyright'>
-                        <p>{translations.copyright}</p>
-                    </div>
+            <div className='list-item scroll-target' id='copyright'>
+                <p>{translations.copyright}</p>
+            </div>
         </div>
     );
 }
