@@ -6,7 +6,7 @@ body.dark-theme {
 
 body.dark-theme,
 body.dark-theme * {
-    color: rgb(201, 201, 201) !important;
+    color: rgb(201, 201, 201);
 }
 
 html {

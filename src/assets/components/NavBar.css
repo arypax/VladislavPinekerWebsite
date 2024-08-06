@@ -58,7 +58,7 @@ body.dark-theme .navbar {
 }
 
 body.dark-theme .navbar-item a {
-    color: white;
+    color: rgb(201, 201, 201);
 }
 
 .navbar-item a:hover {
@@ -75,6 +75,10 @@ body.dark-theme .navbar-item a {
     bottom: 0;
 }
 
+body.dark-theme .navbar-right {
+    color: rgb(201, 201, 201);
+}
+
 .navbar-item-vladislav {
     font-family: 'Comic Sans MS', 'Comic Sans', cursive;
     font-weight: 700;
@@ -84,7 +88,7 @@ body.dark-theme .navbar-item a {
 }
 
 body.dark-theme .navbar-item-vladislav {
-    color: white;
+    color: rgb(201, 201, 201);
 }
 
 .navbar-strip {

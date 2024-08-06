@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useLanguage } from './LanguageContext';
 import './List.css';
 
@@ -7,6 +7,62 @@ function List() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+
+    const welcomeRef = useRef<HTMLHeadingElement>(null);
+    const skillsRef = useRef<HTMLHeadingElement>(null);
+    const experienceRef = useRef<HTMLHeadingElement>(null);
+    const educationRef = useRef<HTMLHeadingElement>(null);
+    const portfolioRef = useRef<HTMLHeadingElement>(null);
+    const contactRef = useRef<HTMLHeadingElement>(null);
+
+    const flashHeader = (ref: React.RefObject<HTMLHeadingElement>) => {
+        const header = ref.current;
+        if (header) {
+            header.classList.remove('highlight');
+            setTimeout(() => {
+                header.classList.add('highlight');
+                
+                setTimeout(() => {
+                    header.classList.remove('highlight');
+                }, 2000);
+            }, 10);
+        }
+    };
+
+    useEffect(() => {
+        const onHashChange = () => {
+            const hash = window.location.hash;
+            switch (hash) {
+                case '#welcome':
+                    flashHeader(welcomeRef);
+                    break;
+                case '#skills':
+                    flashHeader(skillsRef);
+                    break;
+                case '#experience':
+                    flashHeader(experienceRef);
+                    break;
+                case '#education':
+                    flashHeader(educationRef);
+                    break;
+                case '#portfolio':
+                    flashHeader(portfolioRef);
+                    break;
+                case '#contact':
+                    flashHeader(contactRef);
+                    break;
+                default:
+                    break;
+            }
+        };
+
+        window.addEventListener('hashchange', onHashChange);
+        onHashChange();
+
+        return () => {
+            window.removeEventListener('hashchange', onHashChange);
+        };
+    }, []);
 
     const downloadCV = () => {
         const link = document.createElement('a');
@@ -56,7 +112,7 @@ function List() {
             <div className='list-item scroll-target' id='welcome'>
                 <div className='welcome-content'>
                     <div className='welcome-text'>
-                        <h1>{translations.aboutMeHeading}</h1>
+                        <h1 ref={welcomeRef}>{translations.aboutMeHeading}</h1>
                         <p>{translations.aboutMeDescription}</p>
                         <div className='about-me-info'>
                             <p><span className='span-title'>{translations.phone}</span><span className='welcome-title-after'>+7 (776) 2150 888</span></p>
@@ -86,7 +142,7 @@ function List() {
             <div className='list-item scroll-target' id='skills'>
                 <div className='skills-content'>
                     <div className='skills-text'>
-                        <h1>{translations.skillsHeading}</h1>
+                        <h1 ref={skillsRef}>{translations.skillsHeading}</h1>
                         <p>{translations.skillsDescription}</p>
                     </div>
                     <div className='skills-list'>
@@ -102,7 +158,7 @@ function List() {
 
             <div className='list-item scroll-target' id='experience'>
                 <div>
-                    <h1>{translations.experienceHeading}</h1>
+                    <h1 ref={experienceRef}>{translations.experienceHeading}</h1>
                     <div className='experience-item'>
                         <div className='experience-title'>{translations.serviceManagerTitle}</div>
                         <div className='experience-subtitle'>{translations.serviceManagerSubtitle}</div>
@@ -125,7 +181,7 @@ function List() {
 
             <div className='list-item scroll-target' id='education'>
                 <div>
-                    <h1>{translations.educationHeading}</h1>
+                    <h1 ref={educationRef}>{translations.educationHeading}</h1>
                     <div className='experience-item'>
                         <div className='experience-title'>{translations.universityTitle}</div>
                         <div className='experience-subtitle'>{translations.universityLocation}</div>
@@ -148,7 +204,7 @@ function List() {
 
             <div className='list-item scroll-target' id='portfolio'>
                 <div className='portfolio-item'>
-                    <h1>{translations.portfolioHeading}</h1>
+                    <h1 ref={portfolioRef}>{translations.portfolioHeading}</h1>
                     <div className='portfolio-title'>{translations.projectTitle}</div>
                     <div className='portfolio-subtitle'>{translations.projectSubtitle}</div>
                     <div className='portfolio-description'>
@@ -176,7 +232,7 @@ function List() {
             <div className='list-item scroll-target' id='contact'>
                 <div className='contact-content'>
                     <div className='contact-left'>
-                        <h1>{translations.contactHeading}</h1>
+                        <h1 ref={contactRef}>{translations.contactHeading}</h1>
                         <p>{translations.contactDescription}</p>
                     </div>
                     <div className='contact-right'>
@@ -216,6 +272,7 @@ function List() {
                     </div>
                 </div>
             </div>
+
             <div className='list-item scroll-target' id='copyright'>
                 <p>{translations.copyright}</p>
             </div>
