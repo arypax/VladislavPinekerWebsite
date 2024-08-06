@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://vladislav-pineker.vercel.app/sitemap.xml
