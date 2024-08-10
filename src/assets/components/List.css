@@ -16,7 +16,26 @@
     animation: highlight 2s ease;
 }
 
+body.dark-theme .highlight {
+    animation: highlight-dark 2s ease;
+}
+
 @keyframes highlight {
+    0% {
+        color: #1771e7;
+        opacity: 1;
+    }
+    50% {
+        color: #1771e7;
+        opacity: 1;
+    }
+    100% {
+        color: inherit;
+        opacity: 1;
+    }
+}
+
+@keyframes highlight-dark {
     0% {
         color: #1771e7;
         opacity: 1;
@@ -107,6 +126,10 @@ body.dark-theme .highlight {
 
 .welcome-title-after {
     color: #666;
+}
+
+body.dark-theme .welcome-title-after{
+    color: #ffffff;
 }
 
 .about-me-info p {
@@ -222,6 +245,10 @@ body.dark-theme .highlight {
     color: #666;
     font-size: 16px;
     margin: 10px;
+}
+
+body.dark-theme .experience-subtitle {
+    color: white;
 }
 
 .experience-description {
@@ -461,9 +488,17 @@ body.dark-theme .social-icon {
     .input-group {
         flex-direction: column;
     }
+
+    .scroll-target {
+        scroll-margin-top: 45px;
+    }
 }
 
 @media (max-width: 480px) {
+    .main-div {
+        margin-bottom: 0;
+    }
+
     .skills-item {
         font-size: 20px;
         padding: 15px;

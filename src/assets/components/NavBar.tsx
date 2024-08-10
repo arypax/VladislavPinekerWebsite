@@ -11,11 +11,16 @@ function NavBar() {
     });
 
     const [isChecked, setIsChecked] = useState(theme === 'dark');
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     useEffect(() => {
         document.body.classList.toggle('dark-theme', theme === 'dark');
         localStorage.setItem('theme', theme);
     }, [theme]);
+
+    useEffect(() => {
+        document.body.classList.toggle('menu-open', isMenuOpen);
+    }, [isMenuOpen]);
 
     const toggleTheme = () => {
         const newTheme = theme === 'light' ? 'dark' : 'light';
@@ -33,10 +38,30 @@ function NavBar() {
         toggleTheme();
     };
 
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+    }; 
+
     return (
         <nav className='navbar'>
             <ul className='navbar-list'>
                 <li className='navbar-item navbar-item-vladislav'>{translations.name}</li>
+                <div className="navbar-phone">
+                    <input type="checkbox" id="burger-checkbox" className="burger-checkbox" checked={isMenuOpen} onChange={toggleMenu} />
+                    <label htmlFor="burger-checkbox" className="burger"></label>
+                    <ul className={`navbar-list-phone ${isMenuOpen ? 'active' : ''}`}>
+                        <li><a href="#welcome" className="navbar-item-phone" onClick={closeMenu}>{translations.welcome}</a></li>
+                        <li><a href="#skills" className="navbar-item-phone" onClick={closeMenu}>{translations.skills}</a></li>
+                        <li><a href="#experience" className="navbar-item-phone" onClick={closeMenu}>{translations.experience}</a></li>
+                        <li><a href="#education" className="navbar-item-phone" onClick={closeMenu}>{translations.education}</a></li>
+                        <li><a href="#portfolio" className="navbar-item-phone" onClick={closeMenu}>{translations.portfolio}</a></li>
+                        <li><a href="#contact" className="navbar-item-phone" onClick={closeMenu}>{translations.contact}</a></li>
+                    </ul>
+                </div>
                 <div className='navbar-right'>
                     <li className='navbar-item' id='navbar-text-item'><a href="#welcome">{translations.welcome}</a></li>
                     <li className='navbar-item' id='navbar-text-item'><a href="#skills">{translations.skills}</a></li>
