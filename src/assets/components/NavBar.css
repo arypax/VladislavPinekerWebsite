@@ -297,12 +297,10 @@ body.dark-theme .slider-language {
         transition: transform 0.3s, background-color 0.3s;
         width: 185px;
         z-index: 2;
-        box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.192);
     }
 
     body.dark-theme .navbar-list-phone {
         background: #292929;
-        box-shadow: 5px 0px 15px rgba(255, 255, 255, 0.103);
     }
 
     .navbar-item-phone {
