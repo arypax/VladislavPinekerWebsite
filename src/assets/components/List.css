@@ -443,8 +443,6 @@ body.dark-theme .social-icon {
 
 @media (max-width: 768px) {
     .main-div {
-        margin: 10px;
-        padding: 0;
         margin-bottom: 0;
     }
 
@@ -498,6 +496,7 @@ body.dark-theme .social-icon {
 @media (max-width: 480px) {
     .main-div {
         margin-bottom: 0;
+        margin-top: 10px;
     }
 
     .skills-item {
