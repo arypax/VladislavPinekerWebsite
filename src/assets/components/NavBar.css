@@ -222,7 +222,7 @@ body.dark-theme .slider-language {
     z-index: 3;
     cursor: pointer;
     display: block;
-    border: none;
+    border-radius: 10000px;
     background: transparent;
     width: 40px;
     height: 26px;
@@ -231,7 +231,7 @@ body.dark-theme .slider-language {
 }
 
 body.dark-theme .burger {
-    background-color: rgb(31, 31, 31);
+    background: transparent;
 }
 
 .burger::before,
