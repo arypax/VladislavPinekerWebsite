@@ -16,18 +16,21 @@ function List() {
     const contactRef = useRef<HTMLHeadingElement>(null);
 
     const flashHeader = (ref: React.RefObject<HTMLHeadingElement>) => {
-        const header = ref.current;
-        if (header) {
-            header.classList.remove('highlight');
+    const header = ref.current;
+    if (header) {
+        console.log(`Flashing header: ${header.textContent}`);
+        header.classList.remove('highlight');
+        setTimeout(() => {
+            header.classList.add('highlight');
+            console.log('Highlight class added');
+
             setTimeout(() => {
-                header.classList.add('highlight');
-                
-                setTimeout(() => {
-                    header.classList.remove('highlight');
-                }, 2000);
-            }, 10);
-        }
-    };
+                header.classList.remove('highlight');
+                console.log('Highlight class removed');
+            }, 2000);
+        }, 10);
+    }
+};
 
     useEffect(() => {
         const onHashChange = () => {

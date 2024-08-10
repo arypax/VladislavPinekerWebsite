@@ -445,6 +445,7 @@ body.dark-theme .social-icon {
     .main-div {
         margin: 10px;
         padding: 0;
+        margin-bottom: 0;
     }
 
     .list-item {
@@ -541,4 +542,15 @@ body.dark-theme .social-icon {
     .contact-submit{
         font-family: Arial;
     }
+}
+
+body.dimmed-background .main-div {
+    filter: blur(4px);
+    pointer-events: none;
+}
+
+body.dimmed-background .welcome-content, 
+body.dimmed-background .skills-content,
+body.dimmed-background .contact-content {
+    filter: none;
 }
