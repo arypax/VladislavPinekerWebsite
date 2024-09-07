@@ -101,7 +101,7 @@ body.dark-theme .highlight {
 .welcome-image img {
     max-width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 15px;
     object-fit: cover;
     align-self: flex-end;
 }
@@ -166,7 +166,7 @@ body.dark-theme .welcome-title-after{
     cursor: pointer;
     font-size: 16px;
     transition: box-shadow 0.3s ease;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 .contact-button {
@@ -209,7 +209,7 @@ body.dark-theme .welcome-title-after{
     text-align: center;
     font-size: 24px;
     background-color: #f0f0f0;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -283,7 +283,7 @@ body.dark-theme .experience-subtitle {
     background-color: #21262d;
     color: white;
     padding: 13px 20px;
-    border-radius: 5px;
+    border-radius: 15px;
     display: inline-block;
     text-align: center;
     width: max-content;
@@ -373,7 +373,7 @@ body.dark-theme .portfolio-description a{
 .input-group textarea {
     padding: 15px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: 16px;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 300;
@@ -399,7 +399,7 @@ body.dark-theme .portfolio-description a{
     cursor: pointer;
     font-size: 16px;
     transition: box-shadow 0.3s ease;
-    border-radius: 5px;
+    border-radius: 15px;
     text-align: center;
     display: inline-block;
     margin-top: 10px;
