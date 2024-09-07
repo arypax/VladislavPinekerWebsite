@@ -312,6 +312,7 @@ body.dark-theme .portfolio-description a{
     flex-wrap: wrap;
     gap: 20px;
     width: 800px;
+    margin-top: 50px;
 }
 
 .portfolio-grid .portfolio-image {
