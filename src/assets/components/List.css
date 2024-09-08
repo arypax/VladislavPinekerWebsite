@@ -467,6 +467,10 @@ body.dark-theme .social-icon {
         width: 100%;
     }
 
+    .portfolio-grid {
+        margin-top: 0;
+    }
+
     .welcome-image img {
         max-width: 100%;
         height: auto;
